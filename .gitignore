@@ -1,0 +1,22 @@
+# Python
+__pycache__/            # Python cache files
+*.pyc                   # Compiled Python files
+*.pyo                   # Python optimization files
+
+# Environment Variables
+.env                    # Secrets and credentials
+
+# Logs
+/logs/                  # Log files
+
+# Output Data
+/data/output/           # Generated output data (e.g., reports)
+
+# Virtual Environment
+venv/                   # Virtual environment folder
+
+# IDE and Editor Files
+.vscode/                # VS Code settings
+.idea/                  # PyCharm/IntelliJ settings
+*.swp                   # Swap files
+.DS_Store               # macOS system files
