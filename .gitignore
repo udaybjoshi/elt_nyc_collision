@@ -1,4 +1,4 @@
-# Python
+.\# Python
 __pycache__/            # Python cache files
 *.pyc                   # Compiled Python files
 *.pyo                   # Python optimization files
@@ -20,3 +20,7 @@ venv/                   # Virtual environment folder
 .idea/                  # PyCharm/IntelliJ settings
 *.swp                   # Swap files
 .DS_Store               # macOS system files
+
+# Bytecode files
+__pycache__/
+*.py[cod]
