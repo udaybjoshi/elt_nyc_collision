@@ -1,4 +1,19 @@
 pandas
+numpy
 requests
 pyodbc
 python-dotenv
+
+
+# PostgreSQL dependencies
+psycopg2-binary==2.9.6  # PostgreSQL database adapter for Python
+SQLAlchemy==2.0.16       # Database ORM for Python
+
+# Logging
+loguru==0.6.0       # Enhanced logging
+
+# Testing
+pytest==7.4.0       # Testing framework
+
+# Additional dependencies (if needed for ETL tasks)
+python-dotenv==1.0.0  # Load environment variables
