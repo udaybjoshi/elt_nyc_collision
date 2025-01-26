@@ -30,9 +30,11 @@ cd etl_nyc_collision_dataß
 ```
 
 ### 2. Set Up the Virtual Environment
+```bash
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
 
 ### 3. Configure Database
 - Create a new database in PostgreSQL
@@ -62,10 +64,10 @@ python -m unittest discover tests
 ```
 
 ### 6. View Logs
-- Check logs for pipeline execution in 'logs/etl_log.txt'
+- Check logs for pipeline execution in `logs/etl_log.txt`
 
 ## Database Configuration
-The database connection details are stored in the 'config/db_config.py' file. This script reads credentials from the '.env' file and establishes a connection to the PostgreSQL database.
+The database connection details are stored in the `config/db_config.py` file. This script reads credentials from the `.env` file and establishes a connection to the PostgreSQL database.
 
 Example db_config.py:
 ```bash
@@ -86,5 +88,5 @@ def get_connection():
 ```
 ## Notes
 - Make sure the PostgreSQL service is running before executing the ETL pipeline.
-- If you encounter connection issues, verify the '.env' file and database settings.
+- If you encounter connection issues, verify the `.env` file and database settings.
 
