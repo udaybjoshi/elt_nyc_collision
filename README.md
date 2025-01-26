@@ -27,6 +27,7 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/udaybjoshi/etl_nyc_collision_data.git
 cd etl_nyc_collision_dataß
+```
 
 ### 2. Set Up the Virtual Environment
 python -m venv venv
