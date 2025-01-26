@@ -35,31 +35,40 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 ### 3. Configure Database
-- Create a new database in PostgreSQL 
+- Create a new database in PostgreSQL
+```bash 
 CREATE DATABASE nyc_collision;
+```
 
 - Update the .env file with the database credentials:
+```bash
 DB_NAME = nyc_collision
 DB_USER = your_username
 DB_PASSWORD = your_password
 DB_HOST = localhost
 DB_PORT = 5432
+```
 
 ### 4. Run the ETL Pipeline
 - Execute the main ETL script:
+```bash
 python scripts/etl_pipeline.py
+```
 
 ### 5. Test the Pipeline
 - Run unit tests:
+```bash
 python -m unittest discover tests
+```
 
 ### 6. View Logs
-- Check logs for pipeline execution in logs/etl_log.txt
+- Check logs for pipeline execution in 'logs/etl_log.txt'
 
 ## Database Configuration
-The database connection details are stored in the config/db_config.py file. This script reads credentials from the .env file and establishes a connection to the PostgreSQL database.
+The database connection details are stored in the 'config/db_config.py' file. This script reads credentials from the '.env' file and establishes a connection to the PostgreSQL database.
 
 Example db_config.py:
+```bash
 import os
 from dotenv import load_dotenv
 import psycopg2
@@ -74,8 +83,8 @@ def get_connection():
         host=os.getenv("DB_HOST"),
         port=os.getenv("DB_PORT")
     )
-
+```
 ## Notes
 - Make sure the PostgreSQL service is running before executing the ETL pipeline.
-- If you encounter connection issues, verify the .env file and database settings.
+- If you encounter connection issues, verify the '.env' file and database settings.
 
