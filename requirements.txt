@@ -6,8 +6,7 @@ python-dotenv
 
 
 # PostgreSQL dependencies
-psycopg2-binary==2.9.6  # PostgreSQL database adapter for Python
-SQLAlchemy==2.0.16       # Database ORM for Python
+mysql-connector-python==8.0.33
 
 # Logging
 loguru==0.6.0       # Enhanced logging
