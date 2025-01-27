@@ -3,9 +3,9 @@ numpy
 requests
 pyodbc
 python-dotenv
+mysql-connector-python
 
-
-# PostgreSQL dependencies
+# MySQL dependencies
 mysql-connector-python==8.0.33
 
 # Logging
