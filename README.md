@@ -1,9 +1,25 @@
 # ETL Pipeline for NYC Motor Vehicle Collisions Data
 
 ## Project Description
-The **ETL Pipeline for NYC Motor Vehicle Collisions Data** is a Python-based application designed to automate the extraction, transformation, and loading (ETL) process for traffic collision data from the NYC Open Data API. The pipeline processes data about motor vehicle collisions, injuries, fatalities, and vehicle types, storing the results in an SQL Server database for analysis and reporting.
+The **ETL Pipeline for NYC Motor Vehicle Collisions Data** is a Python-based application designed to automate the extraction, transformation, and loading (ETL) process for traffic collision data from the NYC Open Data API. The pipeline processes data about motor vehicle collisions, injuries, fatalities, and vehicle types, storing the results in an MySQL database for analysis and reporting.
 
-This project is ideal for practicing real-world data engineering skills such as API integration, data transformation, database interaction, and workflow automation.
+## Business Context
+The NYC Collision Data project aims to analyze vehicle collisions in New York City to **improve public safety, optimize city planning, and support research efforts** by leveraging insights from historical collision data. The data includes information on crash dates, times, locations, contributing factors, and the severity of incidents.
+
+## Business Goals
+### 1. Public Safety:
+- Identify high-risk areas (collision hotspots) to focus safety measures.
+- Analyze trends in the severity of collisions (injuries and fatalities).
+- Determine common contributing factors to collisions to inform public awareness campaigns.
+### 2. City Planning:
+- Use location-based collision data to recommend infrastructure improvements (e.g., road repairs, traffic lights).
+- Understand pedestrian and cyclist safety concerns to guide the allocation of bike lanes and crosswalks.
+### 3. Policy and Law Enforcement:
+- Identify patterns related to time of day, weather conditions, and other factors that lead to accidents.
+- Evaluate the effectiveness of existing traffic laws and propose necessary adjustments.
+### 4. Research and Reporting:
+- Create public-facing dashboards and periodic reports for stakeholders (e.g., city officials, law enforcement, and researchers).
+- Share insights with insurance companies, urban developers, and NGOs.
 
 ## Features
 - **Data Source**: Extracts live collision data from the [NYC Open Data API](https://data.cityofnewyork.us/resource/h9gi-nx95.json).
@@ -77,7 +93,7 @@ python -m unittest discover tests
 The database connection details are stored in the `config/db_config.py` file. This script reads credentials from the `.env` file and establishes a connection to the MySQL database.
 
 ## Notes
-- Make sure the PostgreSQL service is running before executing the ETL pipeline.
+- Make sure the MySQL service is running before executing the ETL pipeline.
 - If you encounter connection issues, verify the `.env` file and database settings.
 
 
