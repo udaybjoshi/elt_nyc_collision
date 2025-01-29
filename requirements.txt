@@ -4,6 +4,10 @@ requests
 pyodbc
 python-dotenv
 mysql-connector-python
+seaborn==0.12.2
+matplotlib==3.7.1
+SQLAlchemy==2.0.19
+PyMySQL==1.0.3
 
 # MySQL dependencies
 mysql-connector-python==8.0.33

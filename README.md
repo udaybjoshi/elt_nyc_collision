@@ -37,21 +37,26 @@ Before running the project, ensure you have:
 
 ## Installation and Setup
 
-### 1. Clone the Repository
+### 1. Install MySQL
+- Download MySQL: [https://dev.mysql.com/downloads/](https://dev.mysql.com/downloads/)
+- Follow the installation instructions for your operating system.
+- Configure MySQL with a user and password for this project.
+
+### 2. Clone the Repository
 Clone the repository to your local machine:
 ```bash
 git clone https://github.com/udaybjoshi/etl_nyc_collision.git
 cd etl_nyc_collision
 ```
 
-### 2. Set Up the Virtual Environment
+### 3. Set Up the Virtual Environment and Install Dependencies
 ```bash
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Configure Database
+### 4. Configure Database
 - Log in to MySQL:
 ```bash
 mysql -u root -p
@@ -74,19 +79,19 @@ DB_HOST = localhost
 DB_PORT = 3306
 ```
 
-### 4. Run the ETL Pipeline
+### 5. Run the ETL Pipeline
 - Execute the main ETL script:
 ```bash
 python scripts/etl_pipeline.py
 ```
 
-### 5. Test the Pipeline
+### 6. Test the Pipeline
 - Run unit tests:
 ```bash
 python -m unittest discover tests
 ```
 
-### 6. View Logs
+### 7. View Logs
 - Check logs for pipeline execution in `logs/etl_log.txt`
 
 ## Database Configuration
@@ -95,6 +100,9 @@ The database connection details are stored in the `config/db_config.py` file. Th
 ## Notes
 - Make sure the MySQL service is running before executing the ETL pipeline.
 - If you encounter connection issues, verify the `.env` file and database settings.
+
+## Licence
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 
 
