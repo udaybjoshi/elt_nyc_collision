@@ -7267,3 +7267,135 @@ venv/lib/python3.7/site-packages/setuptools-40.8.0.dist-info/zip-safe
 .venv/lib/python3.9/site-packages/zipp-3.21.0.dist-info/top_level.txt
 .venv/lib/python3.9/site-packages/zipp-3.21.0.dist-info/WHEEL
 .venv/share/man/man1/ttx.1
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1-py3.9-nspkg.pth
+.venv/lib/python3.9/site-packages/matplotlib/afm.py
+.venv/lib/python3.9/site-packages/matplotlib/docstring.py
+.venv/lib/python3.9/site-packages/matplotlib/fontconfig_pattern.py
+.venv/lib/python3.9/site-packages/matplotlib/tight_bbox.py
+.venv/lib/python3.9/site-packages/matplotlib/tight_layout.py
+.venv/lib/python3.9/site-packages/matplotlib/type1font.py
+.venv/lib/python3.9/site-packages/matplotlib/backends/web_backend/.eslintrc.js
+.venv/lib/python3.9/site-packages/matplotlib/backends/web_backend/.prettierignore
+.venv/lib/python3.9/site-packages/matplotlib/backends/web_backend/.prettierrc
+.venv/lib/python3.9/site-packages/matplotlib/backends/web_backend/nbagg_uat.ipynb
+.venv/lib/python3.9/site-packages/matplotlib/backends/web_backend/package.json
+.venv/lib/python3.9/site-packages/matplotlib/cbook/__init__.py
+.venv/lib/python3.9/site-packages/matplotlib/mpl-data/sample_data/percent_bachelors_degrees_women_usa.csv
+.venv/lib/python3.9/site-packages/matplotlib/tri/triangulation.py
+.venv/lib/python3.9/site-packages/matplotlib/tri/tricontour.py
+.venv/lib/python3.9/site-packages/matplotlib/tri/trifinder.py
+.venv/lib/python3.9/site-packages/matplotlib/tri/triinterpolate.py
+.venv/lib/python3.9/site-packages/matplotlib/tri/tripcolor.py
+.venv/lib/python3.9/site-packages/matplotlib/tri/triplot.py
+.venv/lib/python3.9/site-packages/matplotlib/tri/trirefine.py
+.venv/lib/python3.9/site-packages/matplotlib/tri/tritools.py
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/INSTALLER
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE_AMSFONTS
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE_BAKOMA
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE_CARLOGO
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE_COLORBREWER
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE_COURIERTEN
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE_JSXTOOLS_RESIZE_OBSERVER
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE_QHULL
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE_QT4_EDITOR
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE_SOLARIZED
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE_STIX
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/LICENSE_YORICK
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/METADATA
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/namespace_packages.txt
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/RECORD
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/REQUESTED
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/top_level.txt
+.venv/lib/python3.9/site-packages/matplotlib-3.7.1.dist-info/WHEEL
+.venv/lib/python3.9/site-packages/mpl_toolkits/axes_grid1/__init__ 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axes_grid1/anchored_artists 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axes_grid1/axes_divider 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axes_grid1/axes_grid 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axes_grid1/axes_rgb 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axes_grid1/axes_size 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axes_grid1/inset_locator 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axes_grid1/mpl_axes 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axes_grid1/parasite_axes 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/__init__ 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/angle_helper 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/axes_divider 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/axes_grid 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/axes_rgb 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/axis_artist 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/axisline_style 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/axislines 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/floating_axes 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/grid_finder 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/grid_helper_curvelinear 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/axisartist/parasite_axes 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/mplot3d/__init__ 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/mplot3d/art3d 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/mplot3d/axes3d 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/mplot3d/axis3d 3.py
+.venv/lib/python3.9/site-packages/mpl_toolkits/mplot3d/proj3d 3.py
+.venv/lib/python3.9/site-packages/seaborn/__init__ 3.py
+.venv/lib/python3.9/site-packages/seaborn/_compat 3.py
+.venv/lib/python3.9/site-packages/seaborn/_decorators.py
+.venv/lib/python3.9/site-packages/seaborn/_docstrings 3.py
+.venv/lib/python3.9/site-packages/seaborn/_oldcore.py
+.venv/lib/python3.9/site-packages/seaborn/_statistics 3.py
+.venv/lib/python3.9/site-packages/seaborn/_testing 3.py
+.venv/lib/python3.9/site-packages/seaborn/algorithms 3.py
+.venv/lib/python3.9/site-packages/seaborn/axisgrid 3.py
+.venv/lib/python3.9/site-packages/seaborn/categorical 3.py
+.venv/lib/python3.9/site-packages/seaborn/cm 3.py
+.venv/lib/python3.9/site-packages/seaborn/distributions 3.py
+.venv/lib/python3.9/site-packages/seaborn/matrix 3.py
+.venv/lib/python3.9/site-packages/seaborn/miscplot 3.py
+.venv/lib/python3.9/site-packages/seaborn/objects 3.py
+.venv/lib/python3.9/site-packages/seaborn/palettes 3.py
+.venv/lib/python3.9/site-packages/seaborn/rcmod 3.py
+.venv/lib/python3.9/site-packages/seaborn/regression 3.py
+.venv/lib/python3.9/site-packages/seaborn/relational 3.py
+.venv/lib/python3.9/site-packages/seaborn/utils 3.py
+.venv/lib/python3.9/site-packages/seaborn/widgets 3.py
+.venv/lib/python3.9/site-packages/seaborn/_core/__init__ 2.py
+.venv/lib/python3.9/site-packages/seaborn/_core/data 2.py
+.venv/lib/python3.9/site-packages/seaborn/_core/exceptions 2.py
+.venv/lib/python3.9/site-packages/seaborn/_core/groupby 2.py
+.venv/lib/python3.9/site-packages/seaborn/_core/moves 2.py
+.venv/lib/python3.9/site-packages/seaborn/_core/plot 2.py
+.venv/lib/python3.9/site-packages/seaborn/_core/properties 2.py
+.venv/lib/python3.9/site-packages/seaborn/_core/rules 2.py
+.venv/lib/python3.9/site-packages/seaborn/_core/scales 2.py
+.venv/lib/python3.9/site-packages/seaborn/_core/subplots 2.py
+.venv/lib/python3.9/site-packages/seaborn/_core/typing 2.py
+.venv/lib/python3.9/site-packages/seaborn/_marks/__init__ 2.py
+.venv/lib/python3.9/site-packages/seaborn/_marks/area 2.py
+.venv/lib/python3.9/site-packages/seaborn/_marks/bar 2.py
+.venv/lib/python3.9/site-packages/seaborn/_marks/base 2.py
+.venv/lib/python3.9/site-packages/seaborn/_marks/dot 2.py
+.venv/lib/python3.9/site-packages/seaborn/_marks/line 2.py
+.venv/lib/python3.9/site-packages/seaborn/_marks/text 2.py
+.venv/lib/python3.9/site-packages/seaborn/_stats/__init__ 2.py
+.venv/lib/python3.9/site-packages/seaborn/_stats/aggregation 2.py
+.venv/lib/python3.9/site-packages/seaborn/_stats/base 2.py
+.venv/lib/python3.9/site-packages/seaborn/_stats/counting 2.py
+.venv/lib/python3.9/site-packages/seaborn/_stats/density 2.py
+.venv/lib/python3.9/site-packages/seaborn/_stats/order 2.py
+.venv/lib/python3.9/site-packages/seaborn/_stats/regression 2.py
+.venv/lib/python3.9/site-packages/seaborn/colors/__init__ 2.py
+.venv/lib/python3.9/site-packages/seaborn/colors/crayons 2.py
+.venv/lib/python3.9/site-packages/seaborn/colors/xkcd_rgb 2.py
+.venv/lib/python3.9/site-packages/seaborn/external/__init__ 2.py
+.venv/lib/python3.9/site-packages/seaborn/external/appdirs 2.py
+.venv/lib/python3.9/site-packages/seaborn/external/docscrape 2.py
+.venv/lib/python3.9/site-packages/seaborn/external/husl 2.py
+.venv/lib/python3.9/site-packages/seaborn/external/kde 2.py
+.venv/lib/python3.9/site-packages/seaborn/external/version 2.py
+.venv/lib/python3.9/site-packages/seaborn-0.12.2.dist-info/INSTALLER
+.venv/lib/python3.9/site-packages/seaborn-0.12.2.dist-info/LICENSE.md
+.venv/lib/python3.9/site-packages/seaborn-0.12.2.dist-info/METADATA
+.venv/lib/python3.9/site-packages/seaborn-0.12.2.dist-info/RECORD
+.venv/lib/python3.9/site-packages/seaborn-0.12.2.dist-info/REQUESTED
+.venv/lib/python3.9/site-packages/seaborn-0.12.2.dist-info/WHEEL
+.vscode/settings.json
+data/output/collisions_by_borough.png
+data/output/high_risk_areas.png
+venv/bin/Activate.ps1
