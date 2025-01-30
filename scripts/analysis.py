@@ -10,7 +10,7 @@ load_dotenv()
 
 # Database connection details from .env file
 DB_HOST = "localhost"
-DB_PORT = "3066"
+DB_PORT = "3306"
 DB_NAME = "nyc_collision"
 DB_USER = "root"
 DB_PASSWORD = "p!55word"
@@ -68,7 +68,7 @@ def visualize_high_risk_areas():
         plt.ylabel("Total Collisions")
         plt.tight_layout()
         plt.savefig(f"{output_dir}/collisions_by_borough.png")
-        plt.show()
+        plt.close()
 
         print(f"Visualization saved: {output_dir}/collisions_by_borough.png")
     except Exception as e:
@@ -102,7 +102,7 @@ def visualize_collision_severity_trends():
         plt.legend(title="Severity")
         plt.tight_layout()
         plt.savefig(f"{output_dir}/collision_severity_trends.png")
-        plt.show()
+        plt.close()
 
         print(f"Visualization saved: {output_dir}/collision_severity_trends.png")
     except Exception as e:
@@ -133,7 +133,7 @@ def visualize_contributing_factors():
         plt.ylabel("Contributing Factor")
         plt.tight_layout()
         plt.savefig(f"{output_dir}/contributing_factors.png")
-        plt.show()
+        plt.close()
 
         print(f"Visualization saved: {output_dir}/contributing_factors.png")
     except Exception as e:
@@ -168,7 +168,7 @@ def visualize_cyclist_pedestrian_safety():
         plt.legend(title="Metric", loc="upper right")
         plt.tight_layout()
         plt.savefig(f"{output_dir}/cyclist_pedestrian_safety.png")
-        plt.show()
+        plt.close()
 
         print(f"Visualization saved: {output_dir}/cyclist pedestrian safety.png")
     except Exception as e:
@@ -199,7 +199,7 @@ def visualize_time_based_patterns():
         plt.ylabel("Total Collisions")
         plt.tight_layout()
         plt.savefig(f"{output_dir}/time_based_patterns.png")
-        plt.show()
+        plt.close()
 
         print(f"Visualization saved: {output_dir}/time based collision patterns.png")
     except Exception as e:
@@ -246,12 +246,10 @@ def visualize_monthly_dashboard():
         plt.xticks(rotation=45)
         plt.tight_layout()
         
-        # Save to the output directory
-        output_path = f"{output_dir}/monthly_dashboard.png"
-        plt.savefig(output_path)
-        plt.show()
-
-        print(f"Visualization saved: {output_path}")
+        print(f"Visualization saved: {output_dir}/monthly trends.png")
+    except Exception as e:
+        print(f"Error monthly trends: {e}")
+        raise
     
     except Exception as e:
         print(f"Error visualizing monthly collision trends: {e}")
