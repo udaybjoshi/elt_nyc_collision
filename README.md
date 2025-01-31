@@ -24,7 +24,7 @@ The NYC Collision Data project aims to analyze vehicle collisions in New York Ci
 ## Features
 - **Data Source**: Extracts live collision data from the [NYC Open Data API](https://data.cityofnewyork.us/resource/h9gi-nx95.json).
 - **Transformation**: Cleans, validates, and enriches the data.
-- **Database Integration**: Loads the processed data into a SQL Server database.
+- **Database Integration**: Loads the processed data into a MySQL database.
 - **Logging**: Tracks the ETL process in log files for monitoring and debugging.
 - **Modular Design**: Divides the pipeline into reusable components for scalability.
 
@@ -88,7 +88,7 @@ python scripts/etl_pipeline.py
 ### 6. Test the Pipeline
 - Run unit tests:
 ```bash
-python -m unittest discover tests
+python -m pytest tests/test_etl.py --disable-warnings
 ```
 
 ### 7. View Logs
