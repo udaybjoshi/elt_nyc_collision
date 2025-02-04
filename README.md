@@ -1,7 +1,7 @@
-# ETL Pipeline for NYC Motor Vehicle Collisions Data
+# ELT Pipeline for NYC Motor Vehicle Collisions Data
 
 ## Project Description
-The **ETL Pipeline for NYC Motor Vehicle Collisions Data** is a Python-based application designed to automate the extraction, transformation, and loading (ETL) process for traffic collision data from the NYC Open Data API. The pipeline processes data about motor vehicle collisions, injuries, fatalities, and vehicle types, storing the results in an MySQL database for analysis and reporting.
+The **ELT Pipeline for NYC Motor Vehicle Collisions Data** is a Python-based application designed to automate the extraction, transformation, and loading (ETL) process for traffic collision data from the NYC Open Data API. The pipeline processes data about motor vehicle collisions, injuries, fatalities, and vehicle types, storing the results in an MySQL database for analysis and reporting.
 
 ## Business Context
 The NYC Collision Data project aims to analyze vehicle collisions in New York City to **improve public safety, optimize city planning, and support research efforts** by leveraging insights from historical collision data. The data includes information on crash dates, times, locations, contributing factors, and the severity of incidents.
@@ -22,13 +22,46 @@ The NYC Collision Data project aims to analyze vehicle collisions in New York Ci
 - Share insights with insurance companies, urban developers, and NGOs.
 
 ## 📂 Project Folder Structure
-etl_nyc_collision/ │── config/ # Configuration files (e.g., environment variables, database settings) │ ├── database_config.yml # Database connection details │ ├── logging_config.yml # Logging settings │ ├── env.example # Example of environment variables file (.env is used but not committed) │ │── data/ # Data storage folder │ ├── input/ # Raw input data (CSV, JSON, etc.) │ │ ├── raw_api_data.csv # Raw collision data from external API │ │ ├── sample_data.csv # Sample data for testing │ │ │ ├── output/ # Processed/cleaned data ready for analysis │ │ ├── cleaned_api_data.csv # Preprocessed collision data │ │ ├── transformed_data.csv # Transformed data ready for MySQL insertion │ │── logs/ # Logs for ETL pipeline runs │ ├── source_pipeline.log # Logs for raw data extraction │ ├── staging_pipeline.log # Logs for data transformation & staging │ ├── entities_pipeline.log # Logs for final data transfer │ │── scripts/ # ETL scripts and analysis functions │ ├── run_source.py # Extract and load raw data into MySQL source table │ ├── run_staging.py # Process and move data from source to staging table │ ├── run_entities.py # Load validated data into the final entities table │ ├── transform.py # Data transformation logic │ ├── analysis.py # Visualizations and analytics on processed data │ ├── create_views.sql # SQL scripts to create database views │ │── tests/ # Unit tests for pipeline validation │ ├── test_source.py # Tests for raw data extraction │ ├── test_staging.py # Tests for staging transformation │ ├── test_entities.py # Tests for final data transfer │ │── notebooks/ # Jupyter Notebooks for exploratory data analysis (EDA) │ ├── eda.ipynb # Initial exploratory analysis of collision data │ │── requirements.txt # Python dependencies │── .gitignore # Ignore unnecessary files (e.g., .env, logs, data files) │── README.md # Project documentation
+elt_nyc_collision/
+│── config/                      # Configuration files (e.g., environment variables, database settings)
+│   ├── db_config.py               # Database connection details
+│   ├── logging_config.py          # Logging settings
+│
+│── data/                         # Data storage folder
+│   ├── input/                     # Raw input data (CSV, JSON, etc.)
+│   │   ├── raw_api_data.csv       # Raw collision data from external API
+│   │
+│   ├── output/                   # Processed/cleaned data ready for analysis
+│   │   ├── cleaned_api_data.csv   # Preprocessed collision data
+│   │   ├── transformed_data.csv   # Transformed data ready for MySQL insertion
+│
+│── logs/                         # Logs for ELT pipeline runs
+│   ├── source_pipeline.log        # Logs for raw data extraction
+│   ├── staging_pipeline.log       # Logs for data transformation & staging
+│   ├── entities_pipeline.log      # Logs for final data transfer
+│
+│── scripts/                      # ELT scripts and analysis functions
+│   ├── extract.py                  # Extract raw data from API
+│   ├── load_source.py              # Load raw data into MySQL source table
+│   ├── load_staging.py             # Process and move data from source to staging table
+│   ├── load_entities.py            # Load validated data into the final entities table
+│   ├── transform.py                # Data transformation logic
+│   ├── analysis.py                 # Visualizations and analytics on processed data
+│   ├── create_views.sql            # SQL scripts to create database views
+│
+│── tests/                        # Unit tests for pipeline validation
+│   ├── test_etl.py                # Tests for raw data extraction
+│
+│── requirements.txt               # Python dependencies
+│── .gitignore                     # Ignore unnecessary files (e.g., .env, logs, data files)
+│── README.md                      # Project documentation
+
 
 ## Features
 - **Data Source**: Extracts live collision data from the [NYC Open Data API](https://data.cityofnewyork.us/resource/h9gi-nx95.json).
 - **Transformation**: Cleans, validates, and enriches the data.
 - **Database Integration**: Loads the processed data into a MySQL database.
-- **Logging**: Tracks the ETL process in log files for monitoring and debugging.
+- **Logging**: Tracks the ELT process in log files for monitoring and debugging.
 - **Modular Design**: Divides the pipeline into reusable components for scalability.
 
 ## Prerequisites
@@ -48,13 +81,13 @@ Before running the project, ensure you have:
 ### 2. Clone the Repository
 Clone the repository to your local machine:
 ```bash
-git clone https://github.com/udaybjoshi/etl_nyc_collision.git
-cd etl_nyc_collision
+git clone https://github.com/udaybjoshi/elt_nyc_collision.git
+cd elt_nyc_collision
 ```
 
 ### 3. Set Up the Virtual Environment and Install Dependencies
 ```bash
-python -m venv venv
+python -m venv .venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -82,20 +115,33 @@ DB_HOST = localhost
 DB_PORT = 3306
 ```
 
-### 5. Run the ETL Pipeline
-- Execute the main ETL script:
-```bash
-python scripts/etl_pipeline.py
-```
-
-### 6. Test the Pipeline
+### 5. Test the ELT Pipeline
 - Run unit tests:
 ```bash
 python -m pytest tests/test_etl.py --disable-warnings
 ```
 
-### 7. View Logs
-- Check logs for pipeline execution in `logs/etl_log.txt`
+### 6. Run the ELT Pipeline
+- Execute the different steps of the ETL process:
+```bash
+python scripts/load_source.py    # Extract raw data
+python scripts/load_staging.py   # Transforma and load into staging table
+python scripts/load_entities.py  # Load into final entities tables   
+```
+
+### 7. Run Data Analysis
+- Create visualizations based on consumption layer views:
+```bash
+python scripts/analysis.py
+```
+
+### 8. View Logs
+- Check logs for pipeline execution 
+```bash
+cat logs/source_pipeline.log
+cat logs/staging_pipeline.log
+cat logs/entities_pipeline.log
+```
 
 ## Database Configuration
 The database connection details are stored in the `config/db_config.py` file. This script reads credentials from the `.env` file and establishes a connection to the MySQL database.
