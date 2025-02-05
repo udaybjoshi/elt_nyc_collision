@@ -2,6 +2,6 @@
 2025-01-30 15:00:13 - INFO - Database connection successful.
 2025-01-30 15:00:15 - INFO - Reading raw CSV file from ../data/input/raw_api_data.csv
 2025-01-30 15:00:17 - INFO - Preprocessing location data...
-2025-01-30 15:00:18 - INFO - Data validation complete. 10,245 records ready for insertion.
-2025-01-30 15:00:22 - INFO - Successfully inserted 10,245 records into source_collision_data.
+2025-01-30 15:00:18 - INFO - Data validation complete. 500 records ready for insertion.
+2025-01-30 15:00:22 - INFO - Successfully inserted 500 records into source_collision_data.
 2025-01-30 15:00:23 - INFO - Source data processing completed successfully.
